@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ConditionalsBasics {
     public static void main(String[] args) {
 
@@ -19,6 +21,22 @@ public class ConditionalsBasics {
         else {
             System.out.println("Hello Java!");
         } // Hello Java!
+
+
+        // if-else ladder (multiple conditions)
+        int a = 10;
+        int b = 20;
+
+        if (a > b) {
+            System.out.println("a is greater than b");
+        }
+        else if (a < b) {
+            System.out.println("a is less than b");
+        }
+        else {
+            System.out.println("a is equal to b");
+        } // a is less than b
+
 
 
         // for loop (executes the block of code for a fixed number of times according to the condition)
@@ -70,5 +88,25 @@ public class ConditionalsBasics {
             num++;
         } while (num != 5); // 1 2 3 4
 
+
+        // for loop (taking input from the user and printing it)
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number: "); 
+        int num = input.nextInt();
+        for(int i = 1; i <= num; i++) {
+            System.out.println(i);
+        }
+        //Enter a number: 10
+        // 1
+        // 2
+        // 3
+        // 4
+        // 5
+        // 6
+        // 7
+        // 8
+        // 9
+        // 10
     }
 }
