@@ -37,3 +37,9 @@ public class Shadowing {
         System.out.println(x); // 20
     }
 }
+
+// Note: Shadowing can lead to confusion and bugs if not used carefully, as it can make it difficult to understand which variable is being referred to in a given context. It is generally recommended to avoid shadowing class variables with local variables or method parameters to maintain code clarity.
+
+// Summary:-
+
+// In this code, we have a class variable 'x' with a value of 10. In the main method, we declare a local variable 'x' that shadows the class variable. When we print 'x' in the main method, it refers to the local variable, which has a value of 30. In the method() function, we declare another local variable 'x' that also shadows the class variable. When we print 'x' in the method() function, it refers to the local variable in that method, which has a value of 20.
