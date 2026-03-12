@@ -116,3 +116,22 @@ public class Arrays_nwArrayList {
 
     }
 }
+/*
+Internal working of ArrayList:
+
+- Initial size of arraylist is fixed internally.
+- When the arraylist is full, a new arraylist is created with double the size of the previous arraylist.
+- The old arraylist is deleted and the new arraylist is made the head of the linked list.
+
+
+Topic not to consider for now:
+
+Anotised Time Complexity:
+- Adding an element to the arraylist: O(1)
+- Removing an element from the arraylist: O(n)
+- Accessing an element in the arraylist: O(1)
+- Inserting an element in the arraylist: O(n)
+- Removing a range of elements from the arraylist: O(n)
+means that the time complexity of these operations is linear in the size of the arraylist. 
+*/
+
