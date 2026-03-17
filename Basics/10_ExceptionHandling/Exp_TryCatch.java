@@ -10,7 +10,7 @@ catch block:
 Handles the exception so that the program does not crash.
 */
 
-public class TryCatch {
+public class Exp_TryCatch {
     public static void main(String[] args) {
 
         System.out.println("Program started");
@@ -32,4 +32,8 @@ public class TryCatch {
 
         System.out.println("Program ended normally");
     }
+    // Output:
+    // Program started
+    // Exception caught: Cannot divide by zero
+    // Program ended normally
 }
