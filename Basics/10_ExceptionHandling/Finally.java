@@ -8,7 +8,7 @@ It is mainly used for:
 - Cleanup operations
 */
 
-public class FinallyBlock {
+public class Finally {
     public static void main(String[] args) {
 
         System.out.println("Program started");
