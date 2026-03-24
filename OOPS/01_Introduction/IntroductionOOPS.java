@@ -39,28 +39,6 @@ public class IntroductionOOPS {
 
         // we've to store all these values in a single variable. That's where classes and OOPS comes in.
         
-        // Class is named group of properties and methods. It is a blueprint for creating objects.
-
-        /*
-        
-        syntax:- class className{
-             properties and methods 
-         }
-
-        */
-
-        // This is an just an example of creating an object. We'll study more about it later.
-        Student student = new Student();
-
-        student.rNumber[0] = 1;
-        student.Name[0] = "Yash";
-        student.Marks[0] = 90.5f;
-
     }
-    // creating a class (basic example)
-    static class Student{
-        int[] rNumber = new int[5];
-        String[] Name = new String[5];
-        float[] Marks = new float[5];
-    }
+   
 }
