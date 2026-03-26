@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class IntroOOPS_Objects {
     public static void main(String[] args) {
 
@@ -7,41 +9,47 @@ public class IntroOOPS_Objects {
         // Objects are used to store and manipulate data.   
     
         // In the next file we'll study how to create objects and how to access the properties and methods of a class.
+
+        //for eg:-
         
-        Student stu = new Student(); // creating an object stu of the class Student
+        
+        Student2[] stu2 = new Student2[5];; // creating an object stu2 of the class Student2
 
-        // We can access the properties and methods of the class using the object using the dot operator.
+         System.out.println(Arrays.toString(stu2)); // [null, null, null, null, null]
 
-        stu.rNumber[0] = 1;
-        stu.Name[0] = "Yash";
-        stu.Marks[0] = 90.5f;
 
-        System.out.println("Roll number: " + stu.rNumber[0]);
-        System.out.println("Name: " + stu.Name[0]);
-        System.out.println("Marks: " + stu.Marks[0]);
-        /*
-        o/p:-
-        Roll number: 1
-        Name: Yash
-        Marks: 90.5 
-        */
 
-        // Similarly we can use use this object to acces the data of other students also
+        Student2 yash; // just declaring a variable of type Student2
 
-        stu.rNumber[1] = 2;
-        stu.Name[1] = "Virat";
-        stu.Marks[1] = 95.5f;
-        /*
-        o/p:-
-        Roll number: 2
-        Name: Virat
-        Marks: 95.5 
-        */
+
+        // the ouput above is null because the array is initialized with null values.
+
+        // To initialize the array we need to use new keyword
+        yash = new Student2();
+
+        System.out.println(yash); // Student2@6a8b0d42 // this is the address of the object in the heap memory
+
+        System.out.println(yash.Name); // null
+        System.out.println(yash.rNumber); // 0
+        System.out.println(yash.Marks); // 0.0
+
+        // We can access the properties and methods of the class for modifying the data of the object using the dot operator.
+
+        yash.rNumber = 1;
+        yash.Name = "Yash";
+        yash.Marks = 90.5f;
+
+        System.out.println(yash.rNumber); // 1
+        System.out.println(yash.Name); // Yash
+        System.out.println(yash.Marks); // 90.5
+
 
     }
-    static class Student{
-        int[] rNumber = new int[5];
-        String[] Name = new String[5];
-        float[] Marks = new float[5];
-    }
+    
 }
+
+class Student2 {
+    int rNumber;
+    String Name;
+    float Marks;
+} 
