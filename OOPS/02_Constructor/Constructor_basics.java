@@ -15,6 +15,13 @@ public class Constructor_basics {
         System.out.println(s1.rno + " " + s1.name + " " + s1.marks); // 13 Yash 90
 
         // These properies are accessed with the help of constructor
+
+        // Similarly we can do this with functions.
+
+        s1.greeting(); // Hello! my name is  Yash
+
+        s1.changeName("Stu"); // chnaging the name
+        s1.greeting(); // Hello! my name is  Stu
     }
 
 }
@@ -32,6 +39,15 @@ class Student {
     // we need one word to access every object and that word is this keyword
 
     // Here this keyword refers to the current object( it will get replaced by the object name while accessing properties for that particular object.)
+
+    void greeting() {
+        System.out.println("Hello! my name is  " + this.name);
+    } // creating a function for greeting
+
+    // creating a function for changing name
+    void changeName(String newName) {
+        this.name = newName;
+    }
     
 
     Student() {
