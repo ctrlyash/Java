@@ -23,6 +23,13 @@ public class StaticMethods {
         fun(); // we can call static method from non-static method without creating an object because static methods belong to the class and can be accessed without creating an object.
     }
 
+    // checking we we can use this keyword in static method or not
+    static void checkThis() {
+        // System.out.println(this); // Error: Cannot use 'this' in a static context
+
+        // The 'this' keyword refers to the current instance of the class, and since static methods belong to the class rather than any particular instance, they cannot use 'this' to refer to an object. This is why we get an error when trying to use 'this' in a static method.
+    }
+
     
 }
 
